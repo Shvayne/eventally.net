@@ -9,10 +9,11 @@ const MenuLinks = ({ isOpen }) => {
       flexBasis={{ base: '100%', md: 'auto' }}
       position={isOpen ? "relative" : "static"}
       zIndex="1001"
+      justifyContent={{ md: "flex-end"}}
       alignItems="center"
     >
       <Stack
-        spacing={8}
+        spacing={{base: 4, md: 1, lg: 0.5}}
         align="center"
         justify={['center', 'space-between', 'flex-end', 'flex-end']}
         direction={{ base: "column", md: "row" }}

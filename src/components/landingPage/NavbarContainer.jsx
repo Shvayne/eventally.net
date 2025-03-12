@@ -6,7 +6,7 @@ const NavbarContainer = ({ children, isOpen,...props }) => {
       as="nav"
       align="center"
       justify="space-between"
-      wrap="wrap"
+      wrap={{ base: "wrap", lg: "nowrap"}}
       w="100%"
       mb={4}
       p={2}
